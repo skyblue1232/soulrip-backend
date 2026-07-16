@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: soulrip-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt && python -m scripts.seed_data
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./soulrip.db
+      - key: CORS_ORIGINS
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash
+      - key: ADMIN_KEY
+        sync: false
