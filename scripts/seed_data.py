@@ -29,7 +29,7 @@ def seed_sample_posts(db):
         # 혼밥 추천 10개
         # =========================
         Post(
-            type="SOLO_MEAL",
+            type="FOOD",
             title="혼밥하기 편한 광장시장 메뉴 추천해요",
             content="바 좌석이나 서서 먹는 메뉴가 많아서 혼자 방문하기 부담이 적었어요.",
             nickname="서울산책러",
@@ -37,7 +37,7 @@ def seed_sample_posts(db):
             tags_json='["혼밥", "광장시장", "추천"]',
         ),
         Post(
-            type="SOLO_MEAL",
+            type="FOOD",
             title="성수동 혼밥하기 좋은 덮밥집",
             content="바 좌석이 있어서 혼자 방문해도 부담 없고 음식도 빠르게 나왔어요.",
             nickname="성수산책러",
@@ -45,7 +45,7 @@ def seed_sample_posts(db):
             tags_json='["혼밥", "성수", "덮밥"]',
         ),
         Post(
-            type="SOLO_MEAL",
+            type="FOOD",
             title="망원시장 혼자 먹거리 투어 후기",
             content="간단한 먹거리를 포장해서 망원한강공원에서 먹기 좋았습니다.",
             nickname="망원여행자",
@@ -53,7 +53,7 @@ def seed_sample_posts(db):
             tags_json='["혼밥", "망원시장", "한강"]',
         ),
         Post(
-            type="SOLO_MEAL",
+            type="FOOD",
             title="을지로 혼자 먹기 좋은 국수집",
             content="회전이 빠르고 혼자 오는 손님이 많아서 편하게 식사할 수 있었어요.",
             nickname="을지로직장인",
@@ -61,7 +61,7 @@ def seed_sample_posts(db):
             tags_json='["혼밥", "을지로", "국수"]',
         ),
         Post(
-            type="SOLO_MEAL",
+            type="FOOD",
             title="홍대 혼밥 가능한 라멘집 추천",
             content="1인 좌석이 따로 마련되어 있어서 혼자 방문하기 좋았습니다.",
             nickname="라멘좋아",
@@ -69,7 +69,7 @@ def seed_sample_posts(db):
             tags_json='["혼밥", "홍대", "라멘"]',
         ),
         Post(
-            type="SOLO_MEAL",
+            type="FOOD",
             title="강남역 근처 혼밥 가능한 식당",
             content="키오스크 주문이라 부담이 적고 혼자 앉을 수 있는 좌석도 많았습니다.",
             nickname="강남초보",
@@ -77,7 +77,7 @@ def seed_sample_posts(db):
             tags_json='["혼밥", "강남역", "식당"]',
         ),
         Post(
-            type="SOLO_MEAL",
+            type="FOOD",
             title="연남동 혼자 브런치 먹기 좋은 곳",
             content="창가 좌석이 많고 분위기가 조용해서 혼자 브런치를 즐기기 좋았어요.",
             nickname="연남산책",
@@ -85,7 +85,7 @@ def seed_sample_posts(db):
             tags_json='["혼밥", "연남동", "브런치"]',
         ),
         Post(
-            type="SOLO_MEAL",
+            type="FOOD",
             title="서울역 근처 혼자 먹기 좋은 식당",
             content="기차를 기다리면서 빠르게 식사하기 좋고 혼자 방문한 손님도 많았습니다.",
             nickname="기차여행자",
@@ -93,7 +93,7 @@ def seed_sample_posts(db):
             tags_json='["혼밥", "서울역", "여행"]',
         ),
         Post(
-            type="SOLO_MEAL",
+            type="FOOD",
             title="잠실에서 혼자 먹기 좋은 돈가스집",
             content="테이블 간격이 넓고 주문도 간단해서 혼자 식사하기 편했습니다.",
             nickname="잠실러",
@@ -101,7 +101,7 @@ def seed_sample_posts(db):
             tags_json='["혼밥", "잠실", "돈가스"]',
         ),
         Post(
-            type="SOLO_MEAL",
+            type="FOOD",
             title="이태원 혼자 방문하기 좋은 카페",
             content="노트북을 사용하는 사람이 많고 혼자 앉을 수 있는 좌석이 충분했어요.",
             nickname="카페탐험가",
