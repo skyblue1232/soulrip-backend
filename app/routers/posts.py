@@ -191,6 +191,24 @@ def list_comments(post_id: int, db: Session = Depends(get_db)) -> list[CommentOu
     ).all()
     return [CommentOut.model_validate(item) for item in comments]
 
+@router.get("/{post_id}/likes/status")
+def get_like_status(
+    post_id: int,
+    clientId: str,
+    db: Session = Depends(get_db),
+):
+    like = (
+        db.query(PostLike)
+        .filter(
+            PostLike.post_id == post_id,
+            PostLike.client_id == clientId,
+        )
+        .first()
+    )
+
+    return {
+        "liked": like is not None,
+    }
 
 @router.post("/{post_id}/comments", response_model=CommentOut, status_code=201)
 def create_comment(
