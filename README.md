@@ -36,15 +36,15 @@ python -m scripts.seed_data
 uvicorn app.main:app --reload
 ```
 
-- API: `http://127.0.0.1:8000/api/v1`
-- Swagger: `http://127.0.0.1:8000/docs`
+- API: `http://https://soulrip-backend.onrender.com/api/v1`
+- Swagger: `https://soulrip-backend.onrender.com/docs`
 
 ## 4. 프론트엔드 연결
 
 `.env` 또는 `.env.local`:
 
 ```env
-VITE_API_BASE_URL=http://127.0.0.1:8000/api/v1
+VITE_API_BASE_URL=https://soulrip-backend.onrender.com/api/v1
 ```
 
 기존 프론트 호출은 다음과 연결됩니다.
